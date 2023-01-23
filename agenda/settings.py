@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-i#!#se8(ky+74y!(lci((=5_qsmbw(bc!zqb_p%q(ybk4z-n&8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['agenda-ricardo-leon.herokuapp.com', '127.0.1', 'localhost']
 
 
 # Application definition
@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'gestion',
-    'rest_framework', #Sirve para cargar los assets (css,js,html) que utiliza DRF
+    # Sirve para cargar los assets (css,js,html) que utiliza DRF
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
